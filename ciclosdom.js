@@ -7,11 +7,12 @@ function creap(){
         mytext=textElement.value;
         console.log(mytext);
         result="";
-        for (var i=0; i<number;i++){
+        for (var i=0; i<number; i++){
                 result += '<p>' + mytext + '</p>'
         }
         console.log(result);
-        document.getElementByid("parrafos").innerHTML=result;
+        document.getElementById("parrafos").innerHTML=result;
+
 }
 
 function crealist(){
@@ -19,12 +20,12 @@ function crealist(){
 	mytext=textElement.value;
 	console.log(mytext);
 	result="<ol>";
-	for(var i=0; i<number;i++){
-		result +='<li>' + mytext + '</li>';
+	for(var i=0; i<number ;i++){
+		result += '<li>' + mytext + '</li>';
 	}
 	result += '</ol>';
 	console.log(result);
-	document.getElementById("lista").innerHTML=result;
+	document.getElementById("listas").innerHTML=result;
 }
 
 function creatable(){
@@ -32,4 +33,11 @@ function creatable(){
 	mytext=textElement.value;
 	console.log(mytext);
 	result="<table border=1>";
-	result
+	result+= '<tr> <th> text </th> <tr>';
+	for ( var i=0; i<number; i++){
+		result+='<tr>' + '<td>' + mytext + '</td>' + '</tr>';
+	}
+	result += '</table>';
+	console.log(result);
+	document.getElementById("tabla").innerHTML= result;
+}
