@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { JojoImgService } from '../jojo-img.service';
 
 @Component({
   selector: 'app-header',
@@ -11,15 +12,16 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   img_usuario!: string;
 
+  constructor(private jojo_img: JojoImgService) { }
 
   ngOnInit(): void {
-    this.jojoRandom();
+    this.img_usuario = this.jojo_img.jojoRandom();
   }
 
-  jojoRandom(): void {
-    let number = Math.floor(Math.random() * 6) + 1;
-    this.img_usuario = "assets/jojo/" + number + ".jpg"
-    console.log(this.img_usuario)
-  }
+  // jojoRandom(): void {
+  //   let number = Math.floor(Math.random() * 6) + 1;
+  //   this.img_usuario = "assets/jojo/" + number + ".jpg"
+  //   console.log(this.img_usuario)
+  // }
 
 }
