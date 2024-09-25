@@ -1,0 +1,25 @@
+.interests {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 9px;
+    background: #a284b0;
+}
+
+.interests-contenido {
+    display: flex;
+    list-style: none;
+}
+
+.interests-contenido-interest {
+    display: flex;
+    background: #b8c983bd;
+    border: 1px solid #b2b78f78;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    padding: 0px 10px;
+    color: black;
+}
