@@ -1,0 +1,24 @@
+.cv-sup {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cv-contenido {
+    column-count: 2;
+    column-gap: 30px;
+    padding: 7px;
+    border-radius: 0px 0px 10px 10px;
+    column-rule: 2px solid #000
+}
+
+.cv-common {
+    border-bottom: var(--border-2);
+    margin: 7px;
+    background: #f5e0ff1f;
+
+}
+
+@media SCREEN AND (MAX-width:700px) {
+    .cv-contenido {
+        column-count: 1;
+    }
+}
